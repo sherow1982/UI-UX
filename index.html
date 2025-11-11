@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        // إذا المستخدم موبايل: أظهر رسالة أو حول تلقائيًا إلى APPS
+        if (/iphone|android|ipad|ipod|windows phone|iemobile|mobile/i.test(navigator.userAgent)) {
+            setTimeout(function(){
+                window.location.href = "https://sherow1982.github.io/UI-UX/APPS/";
+            }, 1500);
+        }
+    </script>
 </head>
 <body>
     <!-- شريط التنقل العلوي -->
@@ -40,7 +48,9 @@
                     <button class="btn btn-primary">ابدأ الآن</button>
                     <button class="btn btn-secondary">تعرف على المزيد</button>
                     <a href="https://sherow1982.github.io/UI-UX/APPS/" class="btn btn-success" style="background:#25D366;color:#fff;">جرب التطبيق على الموبايل وتنزيله مباشرة</a>
+                    <a href="https://sherow1982.github.io/UI-UX/app-release.apk" class="btn btn-warning" style="background:#FFD600;color:#000;">تنزيل التطبيق APK</a>
                 </div>
+                <div id="mobile-notice" style="background:#fff3cd;color:#856404;font-size:1.05rem;padding:0.6em 1em;margin-top:1.5em;border-radius:12px;display:none;text-align:center;">إذا كنت تستخدم هاتفًا محمولًا سيتم تحويلك تلقائيًا لواجهة الموبايل المخصصة خلال لحظات.</div>
             </div>
             <div class="hero-image">
                 <div class="hero-illustration">
@@ -55,4 +65,4 @@
         </div>
     </section>
 
-    <!-- قسم المميزات ... باقي المحتوى كما هو -->
+    <!-- باقي محتوى الصفحة -->
