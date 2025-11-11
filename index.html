@@ -8,17 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script>
-        // إذا المستخدم موبايل: أظهر رسالة أو حول تلقائيًا إلى APPS
-        if (/iphone|android|ipad|ipod|windows phone|iemobile|mobile/i.test(navigator.userAgent)) {
-            setTimeout(function(){
-                window.location.href = "https://sherow1982.github.io/UI-UX/APPS/";
-            }, 1500);
-        }
-    </script>
 </head>
 <body>
-    <!-- شريط التنقل العلوي -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
@@ -38,7 +29,6 @@
         </div>
     </nav>
 
-    <!-- قسم البطل (Hero Section) -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -47,10 +37,8 @@
                 <div class="hero-buttons">
                     <button class="btn btn-primary">ابدأ الآن</button>
                     <button class="btn btn-secondary">تعرف على المزيد</button>
-                    <a href="https://sherow1982.github.io/UI-UX/APPS/" class="btn btn-success" style="background:#25D366;color:#fff;">جرب التطبيق على الموبايل وتنزيله مباشرة</a>
-                    <a href="https://sherow1982.github.io/UI-UX/app-release.apk" class="btn btn-warning" style="background:#FFD600;color:#000;">تنزيل التطبيق APK</a>
+                    <a href="APPS/" class="btn btn-success" style="background:#25D366;color:#fff;text-decoration:none;">📱 جرب التطبيق على الموبايل</a>
                 </div>
-                <div id="mobile-notice" style="background:#fff3cd;color:#856404;font-size:1.05rem;padding:0.6em 1em;margin-top:1.5em;border-radius:12px;display:none;text-align:center;">إذا كنت تستخدم هاتفًا محمولًا سيتم تحويلك تلقائيًا لواجهة الموبايل المخصصة خلال لحظات.</div>
             </div>
             <div class="hero-image">
                 <div class="hero-illustration">
@@ -65,4 +53,117 @@
         </div>
     </section>
 
-    <!-- باقي محتوى الصفحة -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">مميزاتنا</h2>
+            <p class="section-subtitle">نقدم لك أفضل الحلول التقنية</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>سرعة فائقة</h3>
+                    <p>أداء سريع وممتاز في جميع الأجهزة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>متوفر دائماً</h3>
+                    <p>خدمة متاحة على مدار الساعة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>جودة عالية</h3>
+                    <p>معايير جودة احترافية في كل شيء</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <h3>تطوير الويب</h3>
+                    <p>نقوم بتطوير مواقع ويب احترافية وسريعة</p>
+                    <a href="#" class="service-link">اعرف المزيد →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <h3>تطبيقات الموبايل</h3>
+                    <p>تطبيقات متجاوبة لجميع الأجهزة المحمولة</p>
+                    <a href="#" class="service-link">اعرف المزيد →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <h3>تصميم UI/UX</h3>
+                    <p>تصميمات عصرية وسهلة الاستخدام</p>
+                    <a href="#" class="service-link">اعرف المزيد →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>تواصل معنا</h2>
+                    <p>نحن هنا للإجابة على استفساراتك</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:sherow1982@gmail.com" style="color:var(--text-dark);text-decoration:none;">sherow1982@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <a href="https://wa.me/201110760081" target="_blank" style="color:#25D366;text-decoration:none;">راسلنا واتساب</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>القاهرة، مصر</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="https://formspree.io/f/xwpkjnld" method="POST">
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="_replyto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 جميع الحقوق محفوظة - تطبيقي</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
